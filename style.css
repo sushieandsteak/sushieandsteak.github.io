@@ -203,3 +203,20 @@ header .fa-bars {
     padding-top: 1rem;
     line-height: 1.5rem;
 }
+
+.icons-container .iconss img {
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.icons-container .iconss h3 {
+    font-size: 1.5rem;
+    color: #333;
+    padding-bottom: .5rem; 
+}
+
+.icons-container .iconss span {
+    color: #555;
+    font-size: 1.3rem;
+    gap: 1.5rem;
+}
