@@ -11,3 +11,23 @@
     text-transform: capitalize;
     transition:0s linear;
 }
+
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+    scroll-padding: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
