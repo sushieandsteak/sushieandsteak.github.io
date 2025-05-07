@@ -299,3 +299,23 @@ header .fa-bars {
     font-size: 2.5rem;
     color: #333;
 }
+
+.products .box-container .box .content .price{
+    font-family: 2.5rem;
+    color: var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .box-container .box .content .price span{
+    font-size: 2.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
