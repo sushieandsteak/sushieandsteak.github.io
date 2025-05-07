@@ -93,3 +93,15 @@ header  .icons a:hover{
 header #toggler{
     display: none;
 }
+header .fa-bars {
+    position: absolute; /* Mengubah posisi menjadi absolute */
+    top: 1rem; /* Jarak dari atas */
+    left: 1rem; /* Jarak dari kiri */
+    font-size: 3rem;
+    color: #333;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none; /* Pastikan ia ditunjukkan */
+}
