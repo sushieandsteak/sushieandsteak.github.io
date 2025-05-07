@@ -481,3 +481,39 @@ header .fa-bars {
     }
 
 }
+
+@media (max-width:720px){
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+       position: absolute;
+       top: 100%; left:0; right:0;
+       background: #fff;
+       border-top: .1rem solid rgba(0, 0, 0, .1);
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding:1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+    .icons {
+        position: absolute; 
+        top: 2rem; 
+        right: 2rem;
+    }
+    .icons-container .iconss h3 {
+        font-size: 1.9rem;
+    }
+
+    .icons-container .iconss span {
+        font-size: 1.7rem;
+    }
+}
