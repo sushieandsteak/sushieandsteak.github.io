@@ -78,3 +78,18 @@ header .navbar a{
     padding:0 1.5rem;
     color: #666;
 }
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+header  .icons a:hover{
+    color: var(--pink);
+}
+header #toggler{
+    display: none;
+}
