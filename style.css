@@ -234,3 +234,21 @@ header .fa-bars {
     position: relative;
     border-radius: .5rem;
 }
+
+.products .box-container .box .discount{
+    position:absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: var(--pink);
+    background: rgba(255, 51, 153, .05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+} 
