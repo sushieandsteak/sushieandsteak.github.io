@@ -456,7 +456,13 @@ header .fa-bars {
     font-size: 1.5rem;
     padding: 1rem 0;
 }
+.footer .box-container .box img{
+    margin-top: 1rem;
+    display: flex;
+    height: 4rem;
+    width: 100%;
 
+}
 .footer .box-container .box a:hover{
     color: var(--pink);
     text-decoration: underline;
