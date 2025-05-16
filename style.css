@@ -134,7 +134,7 @@ header .fa-bars {
 
 .home .content p{
     font-size: 2rem;
-    color: #999;
+    /* color: #999; */
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -487,6 +487,99 @@ header .fa-bars {
     color: var(--pink);
 }
 
+/* ========== Dekorasi Tambahan Modern & Animasi ========== */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Gradient untuk section */
+.home, .about, .products, .review, .footer {
+    position: relative;
+    z-index: 1;
+}
+.home::before,
+.about::before,
+.products::before,
+.review::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top:0; left:0; right:0; bottom:0;
+    background: linear-gradient(135deg, #fbe8e6 0%, #e4ecfa 100%);
+    opacity: 0.28;
+    border-radius: 1.5rem;
+}
+
+/* Produk Card */
+.products .box-container .box {
+    box-shadow: 0 8px 32px 0 rgba(34, 37, 57, 0.09);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+.products .box-container .box:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 40px 0 rgba(184,26,26,0.14);
+}
+.products .box .discount {
+    background: linear-gradient(90deg, #ffa600 0%, #ff6363 100%);
+    color: #fff !important;
+    font-weight: bold;
+}
+.products .box .badge-new {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #ff6363;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .4rem 1.2rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(255,99,99,0.14);
+}
+
+/* Button & Hover */
+.btn {
+    box-shadow: 0 2px 10px rgba(184,26,26,0.08);
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.3s, transform 0.2s;
+}
+.btn:hover {
+    transform: scale(1.04);
+    letter-spacing: 2px;
+}
+
+/* Efek pada Customer Review */
+.review .box-container .box {
+    background: linear-gradient(120deg, #fff 60%, #ffecec 100%);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.review .box-container .box:hover {
+    box-shadow: 0 10px 32px rgba(184,26,26,0.10);
+    transform: translateY(-5px) scale(1.02);
+}
+.review .box-container .box .user img {
+    border: 2px solid var(--pink);
+    box-shadow: 0 2px 8px rgba(184,26,26,0.13);
+}
+
+/* Border lembut pada gambar di about */
+.about .row .video-container img {
+    border: 8px solid #e4ecfa;
+    box-shadow: 0 6px 32px 0 rgba(184,26,26,0.09);
+}
+
 /* media queries */
 @media (max-width:950px){
     html{
@@ -550,4 +643,5 @@ header .fa-bars {
     font-size: 3rem;
 }
 }
+
 
