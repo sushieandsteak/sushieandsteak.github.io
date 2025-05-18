@@ -115,35 +115,6 @@ header .fa-bars {
     background-position: center;
 }
 
-/* Slider Gambar di Home */
-.slider-container {
-    max-width: 420px;
-    width: 90%;
-    margin: 0 auto 2rem auto;
-    border-radius: 1.3rem;
-    overflow: hidden;
-    box-shadow: 0 8px 30px rgba(184,26,26,0.10);
-    position: relative;
-}
-.slider {
-    position: relative;
-    width: 100%;
-    height: 250px;
-}
-.slider img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: none;
-    transition: opacity 0.8s;
-    border-radius: 1.3rem;
-}
-.slider img.active {
-    display: block;
-    opacity: 1;
-    animation: fadeIn 1s;
-}
-
 .home .content{
     max-width: 40rem;
     font-size: 1rem;
@@ -529,15 +500,26 @@ header .fa-bars {
         transform: none;
     }
 }
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.slider-container {
+    max-width: 420px;
+    width: 90%;
+    margin: 0 auto 2rem auto;
+    border-radius: 1.3rem;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(184,26,26,0.10);
+    position: relative;
+}
+#homeCarousel img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1.3rem;
 }
 @media (max-width:600px){
-    .slider, .slider img {
+    #homeCarousel img {
         height: 170px;
     }
 }
+
 
 /* Gradient untuk section */
 .home, .about, .products, .review, .footer {
