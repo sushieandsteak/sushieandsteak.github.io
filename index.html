@@ -30,10 +30,18 @@
     <!-- Home Section -->
     <section class="home fade-in" id="home">
         <div class="slider-container">
-            <div class="slider">
-                <img src="image/Sushi.jpg" alt="Sushi" class="slide active">
-                <img src="image/steak.jpg" alt="Steak" class="slide">
-                <img src="image/resto.jpg" alt="Restoran" class="slide">
+            <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/Sushi.jpg" class="d-block w-100" alt="Sushi">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/steak.jpg" class="d-block w-100" alt="Steak">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/resto.jpg" class="d-block w-100" alt="Restoran">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content">
@@ -43,6 +51,7 @@
             <a href="#" class="btn">Beli Sekarang</a>
         </div>
     </section>
+    
     
     <!-- About Us -->
     <section class="about fade-in" id="about">
