@@ -110,9 +110,10 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(download.jpeg) no-repeat;
-    background-size:cover;
-    background-position: center;
+    background: none;
+    gap: 2rem;
+    justify-content: center;
+    position: relative;
 }
 
 .home .content{
